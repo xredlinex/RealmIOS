@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealmIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectViewController" id="BYZ-38-t0r" customClass="SelectViewController" customModule="RealmIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1197.1014492753625" y="-5.3571428571428568"/>
         </scene>
-        <!--View Controller-->
+        <!--Add User View Controller-->
         <scene sceneID="8T0-wE-sd4">
             <objects>
-                <viewController id="Kmf-Zp-lFt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddUserViewController" id="Kmf-Zp-lFt" customClass="AddUserViewController" customModule="RealmIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCT-HE-NGb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="287" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--User List View Controller-->
         <scene sceneID="RLB-Xd-oYJ">
             <objects>
-                <viewController id="TYS-EO-u4H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserListViewController" id="TYS-EO-u4H" customClass="UserListViewController" customModule="RealmIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GK3-6L-aZh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="1081" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--Remove Selected View Controller-->
         <scene sceneID="feY-l4-mVY">
             <objects>
-                <viewController id="0IC-r7-8o3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RemoveSelectedViewController" id="0IC-r7-8o3" customClass="RemoveSelectedViewController" customModule="RealmIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wax-Lb-ZVx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
