@@ -1,0 +1,6 @@
+framework module Pods_RealmIOS {
+  umbrella header "Pods-RealmIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
