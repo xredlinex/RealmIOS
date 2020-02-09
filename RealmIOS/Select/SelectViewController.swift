@@ -7,24 +7,36 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SelectViewController: UIViewController {
 
+    @IBOutlet weak var addToListButtonView: UIView!
+    @IBOutlet weak var listButtonView: UIView!
+    @IBOutlet weak var removeSelectedButtonView: UIView!
+    @IBOutlet weak var removeAllButtonView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
+        backgroundView("https://media.giphy.com/media/QZk0HSzvxa4KI/giphy.gif")
+        addToListButtonView.viewLikeButton()
+        listButtonView.viewLikeButton()
+        removeSelectedButtonView.viewLikeButton()
+        removeAllButtonView.viewLikeButton()
+        
+ 
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+
+extension SelectViewController {
+    
+
+
+}
+
+
