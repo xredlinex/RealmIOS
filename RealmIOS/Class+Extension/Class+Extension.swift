@@ -63,19 +63,22 @@ extension UIView {
         NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
                                     blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
        }
-//       
-////    test
-//       public func blurDetailView() {
-//           let view = self
-//           let blurEffect = UIBlurEffect(style: .regular)
-//           let blurView = UIVisualEffectView(effect: blurEffect)
-//           blurView.translatesAutoresizingMaskIntoConstraints = false
-//           view.insertSubview(blurView, at: 0)
-//           NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
-//                                       blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
-//       }
+}
+
+extension  UIViewController {
     
-    
+    func showMegaAlert(_ stringError: String) {
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurVisualEffectView = UIVisualEffectView(effect: blurEffect)
+        blurVisualEffectView.frame = view.bounds
+        let alertController = UIAlertController(title: "Alert",message: stringError, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default) { (_) in
+        blurVisualEffectView.removeFromSuperview()
+        }
+        self.view.addSubview(blurVisualEffectView)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 

@@ -44,42 +44,39 @@ class SelectViewController: UIViewController {
     
 
     @IBAction func didTapViewListActionButton(_ sender: Any) {
-        if users.count > 0 {
+        if realmService.getUser().count > 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
             navigationController?.pushViewController(viewController, animated: true)
         } else {
-//            make alert
+            showMegaAlert("Sorry, No Data")
         }
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
-        if users.count > 0 {
+        if realmService.getUser().count > 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
             viewController.allowDeleteUsers = true
             navigationController?.pushViewController(viewController, animated: true)
         } else {
-//            make alert
+            showMegaAlert("Sorry, No Data")
         }
     }
     
     @IBAction func didTapRemoveAllActionButton(_ sender: Any) {
-        let alertController = UIAlertController(title: "Warning", message: "Delete All Data", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .default) { (_) in
-            self.realmService.deleteData()
+        if realmService.getUser().count > 0 {
+            let alertController = UIAlertController(title: "Warning", message: "Delete All Data", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+                self.realmService.deleteData()
+            }
+            let alertCancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+            alertController.addAction(alertAction)
+            alertController.addAction(alertCancel)
+            present(alertController, animated: true, completion: nil)
+        } else {
+            showMegaAlert("No Data to Delete!")
         }
-        let alertCancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
-        alertController.addAction(alertAction)
-        alertController.addAction(alertCancel)
-        present(alertController, animated: true, completion: nil)
     }
-}
-
-
-extension SelectViewController {
-    
-
-
 }
 
 

@@ -55,7 +55,6 @@ extension UserListViewController {
             titleTextLabel.text = "User List"
             titleTextLabel.textColor = .white
         } else {
-            
             deleteButtonView.isHidden = true
             tableView.allowsMultipleSelection = true
         }

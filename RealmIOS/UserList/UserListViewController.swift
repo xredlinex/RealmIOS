@@ -32,11 +32,8 @@ class UserListViewController: UIViewController {
         tableView.reloadData()
     }
     
-   
-    
     @IBAction func didTapDeleteUsersActionButton(_ sender: Any) {
         deleteUsers()
-
     }
     
     @IBAction func didTapGoBackButton(_ sender: Any) {

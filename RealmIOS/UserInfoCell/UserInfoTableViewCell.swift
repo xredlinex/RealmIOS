@@ -18,10 +18,12 @@ class UserInfoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 166/244, green: 128/244, blue: 74/244, alpha: 1)
+        selectedBackgroundView = view
     }
 }
-
 
 extension UserInfoTableViewCell {
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E2C96D792013D1259B8D8D4 /* Pods_RealmIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E842870F9E68354E23069411 /* Pods_RealmIOS.framework */; };
+		97173F7023F1FB48003693DF /* AddUserViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */; };
 		9720A1FE23F08D2700D116A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A1FD23F08D2700D116A2 /* AppDelegate.swift */; };
 		9720A20023F08D2700D116A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */; };
 		9720A20523F08D2700D116A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9720A20323F08D2700D116A2 /* Main.storyboard */; };
@@ -25,12 +26,14 @@
 		9720A23723F0907D00D116A2 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23623F0907D00D116A2 /* RealmModel.swift */; };
 		9720A23923F0908600D116A2 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23823F0908600D116A2 /* RealmService.swift */; };
 		9720A23B23F0909200D116A2 /* DefaultsUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23A23F0909200D116A2 /* DefaultsUserList.swift */; };
+		9760009A23F1B7DE00430B07 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760009923F1B7DE00430B07 /* Validation.swift */; };
 		97E535F223F0A3F20079CBD1 /* Class+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E535F123F0A3F20079CBD1 /* Class+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A4447625BE3EE4802AC2CB5 /* Pods-RealmIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmIOS.debug.xcconfig"; path = "Target Support Files/Pods-RealmIOS/Pods-RealmIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		69A826B13868F6EDBCF24738 /* Pods-RealmIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmIOS.release.xcconfig"; path = "Target Support Files/Pods-RealmIOS/Pods-RealmIOS.release.xcconfig"; sourceTree = "<group>"; };
+		97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddUserViewController+TextField.swift"; sourceTree = "<group>"; };
 		9720A1FA23F08D2700D116A2 /* RealmIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9720A1FD23F08D2700D116A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		9720A23623F0907D00D116A2 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		9720A23823F0908600D116A2 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		9720A23A23F0909200D116A2 /* DefaultsUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsUserList.swift; sourceTree = "<group>"; };
+		9760009923F1B7DE00430B07 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		97E535F123F0A3F20079CBD1 /* Class+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Extension.swift"; sourceTree = "<group>"; };
 		E842870F9E68354E23069411 /* Pods_RealmIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 			children = (
 				9720A1FD23F08D2700D116A2 /* AppDelegate.swift */,
 				9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */,
+				9760009B23F1B7E200430B07 /* Validation */,
 				9720A23C23F090B900D116A2 /* Service+Model */,
 				9720A23D23F090C700D116A2 /* DefaultUserList */,
 				9720A21523F08EC300D116A2 /* Select */,
@@ -127,6 +132,7 @@
 			children = (
 				9720A21E23F08F3D00D116A2 /* AddUserViewController.swift */,
 				9720A22023F08F4A00D116A2 /* AddUserViewController+Extension.swift */,
+				97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */,
 			);
 			path = AddUser;
 			sourceTree = "<group>";
@@ -165,6 +171,14 @@
 				9720A23A23F0909200D116A2 /* DefaultsUserList.swift */,
 			);
 			path = DefaultUserList;
+			sourceTree = "<group>";
+		};
+		9760009B23F1B7E200430B07 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				9760009923F1B7DE00430B07 /* Validation.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		97E535F323F0A3F70079CBD1 /* Class+Extension */ = {
@@ -310,8 +324,10 @@
 				9720A21223F08EAC00D116A2 /* SelectViewController.swift in Sources */,
 				9720A22123F08F4A00D116A2 /* AddUserViewController+Extension.swift in Sources */,
 				9720A23323F0901600D116A2 /* UserInfoTableViewCell.swift in Sources */,
+				97173F7023F1FB48003693DF /* AddUserViewController+TextField.swift in Sources */,
 				9720A22823F08F7A00D116A2 /* UserListViewController+Extension.swift in Sources */,
 				9720A21423F08EBB00D116A2 /* SelectViewController+Extension.swift in Sources */,
+				9760009A23F1B7DE00430B07 /* Validation.swift in Sources */,
 				9720A20023F08D2700D116A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
