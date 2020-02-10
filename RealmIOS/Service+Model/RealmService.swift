@@ -41,28 +41,32 @@ class RealService {
         }
         return []
     }
-    
-    func deleteUsers(_ user: [User]) {
-        
-        do {
-            let realm = try Realm()
-            let deleteArray = List<User>()
-            user.forEach { (user) in
-                deleteArray.append(user)
-            }
-            realm.delete(deleteArray)
-        } catch {
-            debugPrint("error delete Users")
-        }
-    }
-    
+
     func deleteData() {
         
         do {
             let realm = try Realm()
-            realm.deleteAll()
+            try realm.write {
+                realm.deleteAll()
+            }
         } catch {
             debugPrint("error deleting data")
         }
     }
+   
+    func removeUsers(_ users: [User]) {
+        
+        do {
+            let realm = try Realm()
+            try realm.write {
+                let deleteArray = List<User>()
+                 let deleteUsers = users.filter( { $0.isDelete == true})
+                    deleteArray.append(objectsIn: deleteUsers)
+                realm.delete(deleteArray)
+            }
+        } catch {
+            debugPrint(error)
+        }
+    }
 }
+

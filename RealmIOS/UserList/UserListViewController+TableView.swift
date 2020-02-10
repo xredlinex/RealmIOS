@@ -29,8 +29,14 @@ extension UserListViewController : UITableViewDelegate, UITableViewDataSource {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        users[indexPath.row].isDelete = true
+        countSelected()
+
+    }
     
-    
-    
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        users[indexPath.row].isDelete = false
+        countSelected()
+    }
 }

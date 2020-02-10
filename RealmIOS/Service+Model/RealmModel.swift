@@ -16,4 +16,6 @@ class User: Object {
     @objc dynamic var age: Int = 0
     @objc dynamic var city: String = ""
     @objc dynamic var phone: String = ""
+    
+    var isDelete: Bool?
 }

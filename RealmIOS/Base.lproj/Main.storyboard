@@ -555,8 +555,8 @@
                                             <constraint firstItem="a0X-po-eco" firstAttribute="leading" secondItem="ISc-Cf-qLV" secondAttribute="leading" id="ehb-Wp-ckg"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd8-qb-cIt">
-                                        <rect key="frame" x="110" y="14.5" width="194" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd8-qb-cIt">
+                                        <rect key="frame" x="110" y="25" width="194" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -625,6 +625,7 @@
                     <connections>
                         <outlet property="deleteButtonView" destination="zXj-sb-8vj" id="vJ1-ev-Rxk"/>
                         <outlet property="tableView" destination="Ehe-Cj-JQz" id="R2v-aO-c9p"/>
+                        <outlet property="titleTextLabel" destination="Bd8-qb-cIt" id="Tfy-TN-6T5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj8-99-Mvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
