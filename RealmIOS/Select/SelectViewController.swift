@@ -44,22 +44,22 @@ class SelectViewController: UIViewController {
     
 
     @IBAction func didTapViewListActionButton(_ sender: Any) {
-        if users.count > 0 {
+        if realmService.getUser().count > 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
             navigationController?.pushViewController(viewController, animated: true)
         } else {
-//            make alert
+            showMegaAlert("Sorry, No Data")
         }
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
-        if users.count > 0 {
+        if realmService.getUser().count > 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
             viewController.allowDeleteUsers = true
             navigationController?.pushViewController(viewController, animated: true)
         } else {
-//            make alert
+            showMegaAlert("Sorry, No Data")
         }
     }
     
@@ -73,13 +73,6 @@ class SelectViewController: UIViewController {
         alertController.addAction(alertCancel)
         present(alertController, animated: true, completion: nil)
     }
-}
-
-
-extension SelectViewController {
-    
-
-
 }
 
 

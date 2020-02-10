@@ -555,6 +555,7 @@
                     <connections>
                         <outlet property="addNewUserButtonView" destination="4XF-cS-52z" id="jM9-yK-C28"/>
                         <outlet property="ageTextField" destination="Sv2-2X-vRh" id="Btp-Zw-ALU"/>
+                        <outlet property="bottomHeightConstraint" destination="JCq-1H-V1o" id="4Qy-oe-cII"/>
                         <outlet property="cityTextField" destination="NwV-jI-35c" id="8fg-QA-DeO"/>
                         <outlet property="nameTextField" destination="E8a-qA-Tgb" id="qY2-cd-WaW"/>
                         <outlet property="phoneTextField" destination="Wzt-Vr-5vG" id="VJk-3t-auB"/>

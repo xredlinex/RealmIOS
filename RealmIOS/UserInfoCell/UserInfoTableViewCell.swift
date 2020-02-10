@@ -18,10 +18,8 @@ class UserInfoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }
-
 
 extension UserInfoTableViewCell {
     

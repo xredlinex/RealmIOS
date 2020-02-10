@@ -76,6 +76,23 @@ extension UIView {
 //       }
     
     
+    
+}
+
+extension  UIViewController {
+    
+    func showMegaAlert(_ stringError: String) {
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurVisualEffectView = UIVisualEffectView(effect: blurEffect)
+        blurVisualEffectView.frame = view.bounds
+        let alertController = UIAlertController(title: "Alert",message: stringError, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default) { (_) in
+        blurVisualEffectView.removeFromSuperview()
+        }
+        self.view.addSubview(blurVisualEffectView)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 
