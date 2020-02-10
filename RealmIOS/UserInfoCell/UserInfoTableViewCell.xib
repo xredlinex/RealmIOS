@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="492" id="KGk-i7-Jjw" customClass="UserInfoTableViewCell" customModule="RealmIOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserInfoTableViewCell" rowHeight="492" id="KGk-i7-Jjw" customClass="UserInfoTableViewCell" customModule="RealmIOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="468" height="492"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -34,7 +34,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-qg-ucI">
                                         <rect key="frame" x="10" y="21.5" width="30" height="27.5"/>
-                                        <color key="tintColor" red="0.50588235294117645" green="0.22352941176470587" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.1764705882352941" green="0.35686274509803922" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Wwc-iG-tUB"/>
                                             <constraint firstAttribute="width" constant="30" id="aIw-tu-2kJ"/>
@@ -78,7 +78,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DU0-5h-TBr">
                                         <rect key="frame" x="10" y="19.5" width="30" height="31.5"/>
-                                        <color key="tintColor" red="0.50588235290000005" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.1764705882352941" green="0.35686274509803922" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="ANz-x6-UXW"/>
                                             <constraint firstAttribute="height" constant="30" id="ZKI-zF-JlO"/>
@@ -122,7 +122,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-ZT-Kgd">
                                         <rect key="frame" x="10" y="21" width="30" height="27.5"/>
-                                        <color key="tintColor" red="0.50588235290000005" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.1764705882352941" green="0.35686274509803922" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="5z3-2x-VRX"/>
                                             <constraint firstAttribute="height" constant="30" id="UOl-9K-Sdc"/>
@@ -166,7 +166,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Fg-3p-sKz">
                                         <rect key="frame" x="10" y="20.5" width="30" height="28.5"/>
-                                        <color key="tintColor" red="0.50588235290000005" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.1764705882352941" green="0.35686274509803922" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="4hk-CE-g86"/>
                                             <constraint firstAttribute="height" constant="30" id="h0y-pY-9JL"/>
@@ -210,7 +210,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wxo-Kl-ybH">
                                         <rect key="frame" x="10" y="21.5" width="30" height="27"/>
-                                        <color key="tintColor" red="0.50588235290000005" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.1764705882352941" green="0.35686274509803922" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ehs-jf-8w2"/>
                                             <constraint firstAttribute="width" constant="30" id="ee8-tM-74V"/>
