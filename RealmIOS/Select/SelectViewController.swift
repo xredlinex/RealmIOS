@@ -40,6 +40,7 @@ class SelectViewController: UIViewController {
         navigationController?.pushViewController(viewController, animated: true)
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
+        
     }
     
     @IBAction func didTapRemoveAllActionButton(_ sender: Any) {
