@@ -52,32 +52,28 @@ extension UIView {
         view.layer.shadowRadius = 12.0
     }
     
-    
-    
-//    test
-    
-    public func blurbuttons() {
-           let view = self
-           let blurEffect = UIBlurEffect(style: .prominent)
-           let blurView = UIVisualEffectView(effect: blurEffect)
-           blurView.translatesAutoresizingMaskIntoConstraints = false
-           view.insertSubview(blurView, at: 0)
-           blurView.clipsToBounds = true
-           blurView.layer.cornerRadius = 12.0
-           NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
-                                       blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
+     func blurbuttons() {
+        let view = self
+        let blurEffect = UIBlurEffect(style: .prominent)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        view.insertSubview(blurView, at: 0)
+        blurView.clipsToBounds = true
+        blurView.layer.cornerRadius = 12.0
+        NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
+                                    blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
        }
-       
-//    test
-       public func blurDetailView() {
-           let view = self
-           let blurEffect = UIBlurEffect(style: .regular)
-           let blurView = UIVisualEffectView(effect: blurEffect)
-           blurView.translatesAutoresizingMaskIntoConstraints = false
-           view.insertSubview(blurView, at: 0)
-           NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
-                                       blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
-       }
+//       
+////    test
+//       public func blurDetailView() {
+//           let view = self
+//           let blurEffect = UIBlurEffect(style: .regular)
+//           let blurView = UIVisualEffectView(effect: blurEffect)
+//           blurView.translatesAutoresizingMaskIntoConstraints = false
+//           view.insertSubview(blurView, at: 0)
+//           NSLayoutConstraint.activate([blurView.heightAnchor.constraint(equalTo: view.heightAnchor),
+//                                       blurView.widthAnchor.constraint(equalTo: view.widthAnchor)])
+//       }
     
     
 }

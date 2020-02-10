@@ -27,9 +27,23 @@ class SelectViewController: UIViewController {
         
  
     }
+    @IBAction func didTapAddActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AddUserViewController") as! AddUserViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
     
 
-
+    @IBAction func didTapViewListActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
+    }
+    
+    @IBAction func didTapRemoveAllActionButton(_ sender: Any) {
+    }
 }
 
 
