@@ -19,9 +19,8 @@ class AddUserViewController: UIViewController {
     @IBOutlet weak var addNewUserButtonView: UIView!
     @IBOutlet weak var bottomHeightConstraint: NSLayoutConstraint!
     
-//    var users: [User] = []
-    
     let validation = Validation()
+    let realmService = RealService.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()

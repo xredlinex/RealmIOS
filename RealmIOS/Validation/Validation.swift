@@ -19,7 +19,7 @@ class Validation {
     }
     
     public func validatePhoneNumber(_ phone: String) -> Bool {
-        let phoneRegex = "^[3-9]\\d{9}$"
+        let phoneRegex = "^3?8?(0\\d{9})$"
         let trimmedString = phone.trimmingCharacters(in: .whitespaces)
         let validatePhoneNumber = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
         let isValidatePhone = validatePhoneNumber.evaluate(with: trimmedString)
