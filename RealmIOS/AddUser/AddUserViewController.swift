@@ -7,24 +7,45 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddUserViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var addNewUserButtonView: UIView!
+    @IBOutlet weak var bottomHeightConstraint: NSLayoutConstraint!
+    
+    let validation = Validation()
+    let realmService = RealService.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundView("https://media.giphy.com/media/2yTyH3lEt6LRe/giphy.gif")
+        addNewUserButtonView.blurbuttons()
+        
+        nameTextField.delegate = self
+        surnameTextField.delegate = self
+        ageTextField.delegate = self
+        cityTextField.delegate = self
+        phoneTextField.delegate = self
+        surnameTextField.delegate = self
+        
+        let keyboardWiilHide = UITapGestureRecognizer(target: self, action: #selector(keyboardHide))
+        view.addGestureRecognizer(keyboardWiilHide)
+        addNextButtonNumberPad()
+        addDoneButtonPhonePad()
+    }
+
+    @IBAction func didTapGoBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: false)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapAddUserActionButton(_ sender: Any) {
+        addNewUser()
     }
-    */
-
 }

@@ -6,5 +6,6 @@ target 'RealmIOS' do
   use_frameworks!
 
   pod 'RealmSwift'
+  pod 'Kingfisher', '~> 5.0'
 
 end

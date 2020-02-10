@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E2C96D792013D1259B8D8D4 /* Pods_RealmIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E842870F9E68354E23069411 /* Pods_RealmIOS.framework */; };
+		97173F7023F1FB48003693DF /* AddUserViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */; };
 		9720A1FE23F08D2700D116A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A1FD23F08D2700D116A2 /* AppDelegate.swift */; };
 		9720A20023F08D2700D116A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */; };
 		9720A20523F08D2700D116A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9720A20323F08D2700D116A2 /* Main.storyboard */; };
@@ -20,19 +21,19 @@
 		9720A22423F08F6100D116A2 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22323F08F6100D116A2 /* UserListViewController.swift */; };
 		9720A22623F08F6E00D116A2 /* UserListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22523F08F6E00D116A2 /* UserListViewController+TableView.swift */; };
 		9720A22823F08F7A00D116A2 /* UserListViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22723F08F7A00D116A2 /* UserListViewController+Extension.swift */; };
-		9720A22B23F08FB500D116A2 /* RemoveSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22A23F08FB500D116A2 /* RemoveSelectedViewController.swift */; };
-		9720A22D23F08FDB00D116A2 /* RemoveSelectedViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22C23F08FDB00D116A2 /* RemoveSelectedViewController+Extension.swift */; };
-		9720A22F23F08FE800D116A2 /* RemoveSelectedViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22E23F08FE800D116A2 /* RemoveSelectedViewController+TableView.swift */; };
 		9720A23323F0901600D116A2 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23123F0901600D116A2 /* UserInfoTableViewCell.swift */; };
 		9720A23423F0901600D116A2 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9720A23223F0901600D116A2 /* UserInfoTableViewCell.xib */; };
 		9720A23723F0907D00D116A2 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23623F0907D00D116A2 /* RealmModel.swift */; };
 		9720A23923F0908600D116A2 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23823F0908600D116A2 /* RealmService.swift */; };
 		9720A23B23F0909200D116A2 /* DefaultsUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A23A23F0909200D116A2 /* DefaultsUserList.swift */; };
+		9760009A23F1B7DE00430B07 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760009923F1B7DE00430B07 /* Validation.swift */; };
+		97E535F223F0A3F20079CBD1 /* Class+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E535F123F0A3F20079CBD1 /* Class+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A4447625BE3EE4802AC2CB5 /* Pods-RealmIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmIOS.debug.xcconfig"; path = "Target Support Files/Pods-RealmIOS/Pods-RealmIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		69A826B13868F6EDBCF24738 /* Pods-RealmIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmIOS.release.xcconfig"; path = "Target Support Files/Pods-RealmIOS/Pods-RealmIOS.release.xcconfig"; sourceTree = "<group>"; };
+		97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddUserViewController+TextField.swift"; sourceTree = "<group>"; };
 		9720A1FA23F08D2700D116A2 /* RealmIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9720A1FD23F08D2700D116A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,14 +48,13 @@
 		9720A22323F08F6100D116A2 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		9720A22523F08F6E00D116A2 /* UserListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListViewController+TableView.swift"; sourceTree = "<group>"; };
 		9720A22723F08F7A00D116A2 /* UserListViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListViewController+Extension.swift"; sourceTree = "<group>"; };
-		9720A22A23F08FB500D116A2 /* RemoveSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveSelectedViewController.swift; sourceTree = "<group>"; };
-		9720A22C23F08FDB00D116A2 /* RemoveSelectedViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoveSelectedViewController+Extension.swift"; sourceTree = "<group>"; };
-		9720A22E23F08FE800D116A2 /* RemoveSelectedViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoveSelectedViewController+TableView.swift"; sourceTree = "<group>"; };
 		9720A23123F0901600D116A2 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		9720A23223F0901600D116A2 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		9720A23623F0907D00D116A2 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		9720A23823F0908600D116A2 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		9720A23A23F0909200D116A2 /* DefaultsUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsUserList.swift; sourceTree = "<group>"; };
+		9760009923F1B7DE00430B07 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		97E535F123F0A3F20079CBD1 /* Class+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Extension.swift"; sourceTree = "<group>"; };
 		E842870F9E68354E23069411 /* Pods_RealmIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,14 +102,15 @@
 			children = (
 				9720A1FD23F08D2700D116A2 /* AppDelegate.swift */,
 				9720A1FF23F08D2700D116A2 /* SceneDelegate.swift */,
+				9760009B23F1B7E200430B07 /* Validation */,
 				9720A23C23F090B900D116A2 /* Service+Model */,
 				9720A23D23F090C700D116A2 /* DefaultUserList */,
 				9720A21523F08EC300D116A2 /* Select */,
 				9720A22223F08F4F00D116A2 /* AddUser */,
 				9720A22923F08F8100D116A2 /* UserList */,
-				9720A23023F08FED00D116A2 /* UserRemove */,
 				9720A23523F0901900D116A2 /* UserInfoCell */,
 				9720A20323F08D2700D116A2 /* Main.storyboard */,
+				97E535F323F0A3F70079CBD1 /* Class+Extension */,
 				9720A20623F08D2700D116A2 /* Assets.xcassets */,
 				9720A20823F08D2700D116A2 /* LaunchScreen.storyboard */,
 				9720A20B23F08D2700D116A2 /* Info.plist */,
@@ -131,6 +132,7 @@
 			children = (
 				9720A21E23F08F3D00D116A2 /* AddUserViewController.swift */,
 				9720A22023F08F4A00D116A2 /* AddUserViewController+Extension.swift */,
+				97173F6F23F1FB48003693DF /* AddUserViewController+TextField.swift */,
 			);
 			path = AddUser;
 			sourceTree = "<group>";
@@ -143,16 +145,6 @@
 				9720A22723F08F7A00D116A2 /* UserListViewController+Extension.swift */,
 			);
 			path = UserList;
-			sourceTree = "<group>";
-		};
-		9720A23023F08FED00D116A2 /* UserRemove */ = {
-			isa = PBXGroup;
-			children = (
-				9720A22A23F08FB500D116A2 /* RemoveSelectedViewController.swift */,
-				9720A22C23F08FDB00D116A2 /* RemoveSelectedViewController+Extension.swift */,
-				9720A22E23F08FE800D116A2 /* RemoveSelectedViewController+TableView.swift */,
-			);
-			path = UserRemove;
 			sourceTree = "<group>";
 		};
 		9720A23523F0901900D116A2 /* UserInfoCell */ = {
@@ -179,6 +171,22 @@
 				9720A23A23F0909200D116A2 /* DefaultsUserList.swift */,
 			);
 			path = DefaultUserList;
+			sourceTree = "<group>";
+		};
+		9760009B23F1B7E200430B07 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				9760009923F1B7DE00430B07 /* Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		97E535F323F0A3F70079CBD1 /* Class+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97E535F123F0A3F20079CBD1 /* Class+Extension.swift */,
+			);
+			path = "Class+Extension";
 			sourceTree = "<group>";
 		};
 		FCEEB8571EDDB08D9F0198B2 /* Frameworks */ = {
@@ -309,18 +317,18 @@
 				9720A23723F0907D00D116A2 /* RealmModel.swift in Sources */,
 				9720A22623F08F6E00D116A2 /* UserListViewController+TableView.swift in Sources */,
 				9720A21F23F08F3D00D116A2 /* AddUserViewController.swift in Sources */,
+				97E535F223F0A3F20079CBD1 /* Class+Extension.swift in Sources */,
 				9720A23B23F0909200D116A2 /* DefaultsUserList.swift in Sources */,
 				9720A23923F0908600D116A2 /* RealmService.swift in Sources */,
-				9720A22F23F08FE800D116A2 /* RemoveSelectedViewController+TableView.swift in Sources */,
 				9720A1FE23F08D2700D116A2 /* AppDelegate.swift in Sources */,
-				9720A22D23F08FDB00D116A2 /* RemoveSelectedViewController+Extension.swift in Sources */,
 				9720A21223F08EAC00D116A2 /* SelectViewController.swift in Sources */,
 				9720A22123F08F4A00D116A2 /* AddUserViewController+Extension.swift in Sources */,
 				9720A23323F0901600D116A2 /* UserInfoTableViewCell.swift in Sources */,
+				97173F7023F1FB48003693DF /* AddUserViewController+TextField.swift in Sources */,
 				9720A22823F08F7A00D116A2 /* UserListViewController+Extension.swift in Sources */,
 				9720A21423F08EBB00D116A2 /* SelectViewController+Extension.swift in Sources */,
+				9760009A23F1B7DE00430B07 /* Validation.swift in Sources */,
 				9720A20023F08D2700D116A2 /* SceneDelegate.swift in Sources */,
-				9720A22B23F08FB500D116A2 /* RemoveSelectedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
