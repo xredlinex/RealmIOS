@@ -16,16 +16,25 @@ class SelectViewController: UIViewController {
     @IBOutlet weak var removeSelectedButtonView: UIView!
     @IBOutlet weak var removeAllButtonView: UIView!
     
+    var realmService = RealService.shared
+    var users: [User] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             
         backgroundView("https://media.giphy.com/media/QZk0HSzvxa4KI/giphy.gif")
+        
         addToListButtonView.viewLikeButton()
         listButtonView.viewLikeButton()
         removeSelectedButtonView.viewLikeButton()
         removeAllButtonView.viewLikeButton()
         
- 
+        if realmService.getUser().isEmpty {
+            UserListGenerator().userList()
+            users = realmService.getUser()
+        } else {
+            users = realmService.getUser()
+        }
     }
     @IBAction func didTapAddActionButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -40,10 +49,22 @@ class SelectViewController: UIViewController {
         navigationController?.pushViewController(viewController, animated: true)
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        viewController.allowDeleteUsers = true
+        navigationController?.pushViewController(viewController, animated: true)
         
     }
     
     @IBAction func didTapRemoveAllActionButton(_ sender: Any) {
+        let alertController = UIAlertController(title: "Warning", message: "Delete All Data", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+            self.realmService.deleteData()
+        }
+        let alertCancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        alertController.addAction(alertAction)
+        alertController.addAction(alertCancel)
+        present(alertController, animated: true, completion: nil)
     }
 }
 
