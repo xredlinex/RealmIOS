@@ -11,14 +11,17 @@ import UIKit
 class UserListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var deleteButtonView: UIView!
     
     let realmService = RealService.shared
     var users: [User] = []
+    var allowDeleteUsers = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         backgroundView("https://media.giphy.com/media/IVhgswlzBpL3y/giphy.gif")
+        ifDeleteUsers()
         
         if realmService.getUser().isEmpty {
             UserListGenerator().userList()
@@ -32,9 +35,28 @@ class UserListViewController: UIViewController {
         tableView.reloadData()
         
     }
+    @IBAction func didTapDeleteUsersActionButton(_ sender: Any) {
+    }
     
     @IBAction func didTapGoBackButton(_ sender: Any) {
         navigationController?.popViewController(animated: false)
     }
     
+}
+
+
+extension UserListViewController {
+    
+    func ifDeleteUsers() {
+        
+        if !allowDeleteUsers {
+            deleteButtonView.isHidden = true
+            tableView.allowsMultipleSelection = true
+        } else {
+            
+            
+        }
+        
+        
+    }
 }

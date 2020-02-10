@@ -40,6 +40,10 @@ class SelectViewController: UIViewController {
         navigationController?.pushViewController(viewController, animated: true)
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        viewController.allowDeleteUsers = true
+        navigationController?.pushViewController(viewController, animated: true)
         
     }
     
