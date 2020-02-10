@@ -7,24 +7,50 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SelectViewController: UIViewController {
 
+    @IBOutlet weak var addToListButtonView: UIView!
+    @IBOutlet weak var listButtonView: UIView!
+    @IBOutlet weak var removeSelectedButtonView: UIView!
+    @IBOutlet weak var removeAllButtonView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
+        backgroundView("https://media.giphy.com/media/QZk0HSzvxa4KI/giphy.gif")
+        addToListButtonView.viewLikeButton()
+        listButtonView.viewLikeButton()
+        removeSelectedButtonView.viewLikeButton()
+        removeAllButtonView.viewLikeButton()
+        
+ 
+    }
+    @IBAction func didTapAddActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AddUserViewController") as! AddUserViewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapViewListActionButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
-    */
+    @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
+    }
+    
+    @IBAction func didTapRemoveAllActionButton(_ sender: Any) {
+    }
+}
+
+
+extension SelectViewController {
+    
+
 
 }
+
+
