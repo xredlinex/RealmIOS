@@ -44,16 +44,23 @@ class SelectViewController: UIViewController {
     
 
     @IBAction func didTapViewListActionButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
-        navigationController?.pushViewController(viewController, animated: true)
+        if users.count > 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+            navigationController?.pushViewController(viewController, animated: true)
+        } else {
+//            make alert
+        }
     }
     @IBAction func didTapRemoveSelectedActionButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
-        viewController.allowDeleteUsers = true
-        navigationController?.pushViewController(viewController, animated: true)
-        
+        if users.count > 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "UserListViewController") as! UserListViewController
+            viewController.allowDeleteUsers = true
+            navigationController?.pushViewController(viewController, animated: true)
+        } else {
+//            make alert
+        }
     }
     
     @IBAction func didTapRemoveAllActionButton(_ sender: Any) {

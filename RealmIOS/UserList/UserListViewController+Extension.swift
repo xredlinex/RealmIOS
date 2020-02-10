@@ -17,6 +17,9 @@ extension UserListViewController {
             self.realmService.removeUsers(self.users)
             self.users = self.realmService.getUser()
             self.tableView.reloadData()
+            if self.users.count == 0 {
+                self.navigationController?.popViewController(animated: false)
+            }
         }
         let alertCancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
         alertController.addAction(aletAction)

@@ -30,11 +30,12 @@ class UserListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        
     }
+    
+   
+    
     @IBAction func didTapDeleteUsersActionButton(_ sender: Any) {
         deleteUsers()
-        
 
     }
     
