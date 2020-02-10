@@ -36,6 +36,7 @@ class SelectViewController: UIViewController {
             users = realmService.getUser()
         }
     }
+    
     @IBAction func didTapAddActionButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "AddUserViewController") as! AddUserViewController

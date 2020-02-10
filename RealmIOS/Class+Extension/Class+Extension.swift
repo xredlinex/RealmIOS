@@ -9,8 +9,6 @@
 import UIKit
 import Kingfisher
 
-
-
 extension UIViewController {
     
     func backgroundView(_ background: String) {
@@ -30,7 +28,6 @@ extension UIViewController {
         self.view.sendSubviewToBack(backgrounImage)
     }
 }
-
 
 extension UIView {
     

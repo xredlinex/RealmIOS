@@ -63,6 +63,8 @@ extension AddUserViewController {
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let next = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(addNextButtonActionAge))
         let item = [flexSpace, next]
+        nextToolBar.backgroundColor = .red
+        next.tintColor = .white
         nextToolBar.items = item
         nextToolBar.sizeToFit()
         ageTextField.inputAccessoryView = nextToolBar
@@ -71,9 +73,11 @@ extension AddUserViewController {
     func addDoneButtonPhonePad() {
         let doneToolBar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
         doneToolBar.barStyle = .default
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(addDoneButtonActionPhone))
-        let item = [flexSpace, done]
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        doneToolBar.backgroundColor = .red
+        done.tintColor = .white
+        let item = [flexSpace, done, flexSpace]
         doneToolBar.items = item
         doneToolBar.sizeToFit()
         phoneTextField.inputAccessoryView = doneToolBar

@@ -9,8 +9,6 @@
 import UIKit
 import RealmSwift
 
-
-
 extension AddUserViewController {
     
     func addNewUser() {
@@ -34,9 +32,8 @@ extension AddUserViewController {
             newUser.phone = phone
             
             realmService.writeUSer([newUser])
-            
-    
-            
+            registrationAlert()
+        
         } else {
             var validateText = ""
             
