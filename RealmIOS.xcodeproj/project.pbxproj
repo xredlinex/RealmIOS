@@ -15,7 +15,6 @@
 		9720A20723F08D2700D116A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9720A20623F08D2700D116A2 /* Assets.xcassets */; };
 		9720A20A23F08D2700D116A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9720A20823F08D2700D116A2 /* LaunchScreen.storyboard */; };
 		9720A21223F08EAC00D116A2 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A21123F08EAC00D116A2 /* SelectViewController.swift */; };
-		9720A21423F08EBB00D116A2 /* SelectViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A21323F08EBB00D116A2 /* SelectViewController+Extension.swift */; };
 		9720A21F23F08F3D00D116A2 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A21E23F08F3D00D116A2 /* AddUserViewController.swift */; };
 		9720A22123F08F4A00D116A2 /* AddUserViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22023F08F4A00D116A2 /* AddUserViewController+Extension.swift */; };
 		9720A22423F08F6100D116A2 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A22323F08F6100D116A2 /* UserListViewController.swift */; };
@@ -42,7 +41,6 @@
 		9720A20923F08D2700D116A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9720A20B23F08D2700D116A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9720A21123F08EAC00D116A2 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
-		9720A21323F08EBB00D116A2 /* SelectViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectViewController+Extension.swift"; sourceTree = "<group>"; };
 		9720A21E23F08F3D00D116A2 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		9720A22023F08F4A00D116A2 /* AddUserViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddUserViewController+Extension.swift"; sourceTree = "<group>"; };
 		9720A22323F08F6100D116A2 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				9720A21123F08EAC00D116A2 /* SelectViewController.swift */,
-				9720A21323F08EBB00D116A2 /* SelectViewController+Extension.swift */,
 			);
 			path = Select;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 				9720A23323F0901600D116A2 /* UserInfoTableViewCell.swift in Sources */,
 				97173F7023F1FB48003693DF /* AddUserViewController+TextField.swift in Sources */,
 				9720A22823F08F7A00D116A2 /* UserListViewController+Extension.swift in Sources */,
-				9720A21423F08EBB00D116A2 /* SelectViewController+Extension.swift in Sources */,
 				9760009A23F1B7DE00430B07 /* Validation.swift in Sources */,
 				9720A20023F08D2700D116A2 /* SceneDelegate.swift in Sources */,
 			);

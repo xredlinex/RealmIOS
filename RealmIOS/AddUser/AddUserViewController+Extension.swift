@@ -62,7 +62,7 @@ extension AddUserViewController {
     
     func registrationAlert() {
         
-        let alertController = UIAlertController(title: "Succes!", message: "Registration Complere", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Succes!", message: "Registration Complete", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default) { (_) in
             self.navigationController?.popViewController(animated: false)
         }
