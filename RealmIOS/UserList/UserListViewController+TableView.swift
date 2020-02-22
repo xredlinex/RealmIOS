@@ -31,10 +31,13 @@ extension UserListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         setSelectDeselect(select: true, index: indexPath.row)
+        debugPrint(indexPath.row)
+        
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         setSelectDeselect(select: false, index: indexPath.row)
+        debugPrint(indexPath.row)
     }
     
     func setSelectDeselect(select: Bool, index: Int) {
