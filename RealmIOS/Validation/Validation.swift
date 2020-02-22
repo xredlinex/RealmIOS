@@ -27,11 +27,7 @@ class Validation {
     }
     
     public func validateAge(_ age: Int) -> Bool {
-        if age >= 18 && age <= 99 {
-            return true
-        } else {
-            return false
-        }
+        return 18...99 ~= age
     }
 }
 

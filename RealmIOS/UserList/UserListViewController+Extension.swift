@@ -32,15 +32,11 @@ extension UserListViewController {
     
     func countSelected() {
         
-        if let select = tableView.indexPathForSelectedRow  {
-            if select.count > 0 {
-                deleteButtonView.isHidden = false
-                 titleTextLabel.text = "DELETE USERS"
-                 titleTextLabel.textColor = .red
-            }
-        } else {
-            deleteButtonView.isHidden = true
-            titleTextLabel.text = ""
+        if let select = tableView.indexPathForSelectedRow {
+            debugPrint(select.count)
+            deleteButtonView.isHidden = (select.count > 0 ? false : true )
+            
+            titleTextLabel.text = (select.count > 0 ? "DELETE USERS" : "")
             titleTextLabel.textColor = .red
         }
     }
@@ -49,9 +45,11 @@ extension UserListViewController {
 extension UserListViewController {
     
     func ifDeleteUsers() {
+//        deleteButtonView.isHidden = allowDeleteUsers
         
         if !allowDeleteUsers {
-            deleteButtonView.isHidden = true
+            
+//            deleteButtonView.isHidden = true
             titleTextLabel.text = "User List"
             titleTextLabel.textColor = .white
         } else {

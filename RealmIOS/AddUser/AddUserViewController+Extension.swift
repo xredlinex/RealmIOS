@@ -13,9 +13,12 @@ extension AddUserViewController {
     
     func addNewUser() {
         
-        guard let name = nameTextField.text, let surname = surnameTextField.text, let age = ageTextField.text, let city = cityTextField.text, let phone = phoneTextField.text else {
-            return
-        }
+        guard let name = nameTextField.text,
+            let surname = surnameTextField.text,
+            let age = ageTextField.text,
+            let city = cityTextField.text,
+            let phone = phoneTextField.text
+        else { return }
         
         let isvalidateName = validation.validateString(name)
         let isvalidateSurname = validation.validateString(surname)

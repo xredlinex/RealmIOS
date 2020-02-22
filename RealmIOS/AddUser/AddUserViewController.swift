@@ -37,8 +37,10 @@ class AddUserViewController: UIViewController {
         
         let keyboardWiilHide = UITapGestureRecognizer(target: self, action: #selector(keyboardHide))
         view.addGestureRecognizer(keyboardWiilHide)
-        addNextButtonNumberPad()
-        addDoneButtonPhonePad()
+//        addNextButtonNumberPad()
+//        addDoneButtonPhonePad()
+        addButtonPad(selector: #selector(addNextButtonActionAge), title: "Next", colorBar: .darkGray, tintColor: .white, textField: ageTextField)
+        addButtonPad(selector: #selector(addDoneButtonActionPhone), title: "Done", colorBar: .red, tintColor: .white, textField: phoneTextField)
     }
 
     @IBAction func didTapGoBackButton(_ sender: Any) {

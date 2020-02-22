@@ -56,31 +56,19 @@ extension AddUserViewController {
 }
 
 extension AddUserViewController {
-    
-    func addNextButtonNumberPad() {
-        let nextToolBar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
-        nextToolBar.barStyle = .default
+        
+    func addButtonPad(selector: Selector, title: String, colorBar: UIColor, tintColor: UIColor, textField: UITextField) {
+        let toolBar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
+        toolBar.barStyle = .default
+        let done = UIBarButtonItem(title: title, style: .done, target: self, action: selector)
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let next = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(addNextButtonActionAge))
-        let item = [flexSpace, next]
-        nextToolBar.backgroundColor = .red
-        next.tintColor = .white
-        nextToolBar.items = item
-        nextToolBar.sizeToFit()
-        ageTextField.inputAccessoryView = nextToolBar
-    }
-    
-    func addDoneButtonPhonePad() {
-        let doneToolBar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
-        doneToolBar.barStyle = .default
-        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(addDoneButtonActionPhone))
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        doneToolBar.backgroundColor = .red
-        done.tintColor = .white
+        toolBar.backgroundColor = colorBar
+        done.tintColor = tintColor
         let item = [flexSpace, done, flexSpace]
-        doneToolBar.items = item
-        doneToolBar.sizeToFit()
-        phoneTextField.inputAccessoryView = doneToolBar
+        toolBar.items = item
+        toolBar.sizeToFit()
+        textField.inputAccessoryView = toolBar
     }
+    
 }
 

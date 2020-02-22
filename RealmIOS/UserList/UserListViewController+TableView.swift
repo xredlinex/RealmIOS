@@ -30,12 +30,15 @@ extension UserListViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        users[indexPath.row].isDelete = true
-        countSelected()
+        setSelectDeselect(select: true, index: indexPath.row)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        users[indexPath.row].isDelete = false
+        setSelectDeselect(select: false, index: indexPath.row)
+    }
+    
+    func setSelectDeselect(select: Bool, index: Int) {
+        users[index].isDelete = select
         countSelected()
     }
 }
